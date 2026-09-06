@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Integration_Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Integration_Logs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Error_Message --></label>
+        <name>Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Integration_Type --></label>
+        <name>Integration_Type__c</name>
+        <picklistValues>
+            <masterLabel>ERP</masterLabel>
+            <translation><!-- ERP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment</masterLabel>
+            <translation><!-- Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAP</masterLabel>
+            <translation><!-- SAP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last_Attempt_Time --></label>
+        <name>Last_Attempt_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next_Run_Time --></label>
+        <name>Next_Run_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object_Name --></label>
+        <name>Object_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operation_Type --></label>
+        <name>Operation_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record_Count --></label>
+        <name>Record_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record_Ids --></label>
+        <name>Record_Ids__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request_Body --></label>
+        <name>Request_Body__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request_Payload --></label>
+        <name>Request_Payload__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response_Body --></label>
+        <name>Response_Body__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retry_Count --></label>
+        <name>Retry_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transaction_Id --></label>
+        <name>Transaction_Id__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

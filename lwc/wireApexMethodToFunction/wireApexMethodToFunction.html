@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Wired Apex Method To Function">
+        <div class="slds-m-around_medium">
+            <p class="slds-m-bottom_medium">
+                <lightning-button label="Load Contacts" onclick={handleLoad}></lightning-button>
+            </p>
+            <template lwc:if={contacts}>
+                <template for:each= {contacts} for:item="contact" >
+                    <p key={contact.Id}>{contact.Name}</p>
+                    <p key={contact.Id}>{contact.Phone}</p>
+                    <p key={contact.Id}>{contact.Email}</p>
+
+                </template>
+
+            </template>
+            <template lwc:elseif={error}>
+                <p>Error information: {error}</p>
+            </template>
+
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Search Contact">
+        <div class="slds-m-around_medium">
+        <lightning-input class="slds-m-below_small" type="search" onchange={handleChange} label="Search Contact" value={searchKey}>
+
+        </lightning-input>
+        <p>
+            <lightning-button label=" Search" onclick={handleSearch}></lightning-button>
+
+        </p>
+
+        <template lwc:if={contacts}>
+            <template for:each={contacts} for:item="contact">
+                <p key={contact.Id}>{contact.Name}</p>
+            </template>
+
+        </template>
+        <template lwc:elseif={error}>
+            <p>Error details: {error}</p>
+        </template>
+        </div>
+    </lightning-card>
+</template>

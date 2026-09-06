@@ -1,0 +1,13 @@
+<!-- customDataTypeNumber.html -->
+<!-- customDataTypeNumber.html -->
+<template>
+    <div class={computedClass}>
+        <lightning-formatted-number format-style="currency" value={value}>
+        </lightning-formatted-number>
+        <template lwc:if={value}>
+            <lightning-icon class="slds-p-horizontal_xx-small" icon-name={computedIcon} size="xx-small"
+                variant={iconVariant}>
+        </lightning-icon>
+    </template>
+    </div>
+</template>

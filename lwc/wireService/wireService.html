@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Account Wire">
+        <template lwc:if={record}>
+        <div>{accountName}</div>
+        <div>{annualRevenue}</div>
+        </template>
+        <template lwc:if={error}>
+            <div>{error}</div>
+        </template>
+    </lightning-card>
+</template>

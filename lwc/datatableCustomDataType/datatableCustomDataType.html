@@ -1,0 +1,19 @@
+<!-- datatableCustomDataType.html -->
+<template>
+    <lightning-card
+        title="Datatable Custom Data Type"
+        icon-name="custom:custom62"
+    >
+        <lightning-button label="Add Custom Type" onclick={addCustomTypes} disabled={buttonDisabled}></lightning-button>
+        <lightning-datatable
+            key-field="Id"
+            data={contacts.data}
+            show-row-number-column
+            column-widths-mode="auto"
+            columns={columns}>
+            <template if:true={showCustomTypes}>
+                <c-custom-provider slot="customdatatypes"></c-custom-provider>
+            </template>
+        </lightning-datatable>
+    </lightning-card>
+</template>

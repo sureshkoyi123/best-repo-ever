@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Metadata_Driven_Trigger__c</fullName>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Metadata Driven Trigger</label>
+        <referenceTo>Metadata_Driven_Trigger__mdt</referenceTo>
+        <relationshipLabel>Disabled For</relationshipLabel>
+        <relationshipName>Disabled_For</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>User_Email__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>User Email</label>
+        <required>true</required>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <label>Disabled For</label>
+    <pluralLabel>Disabled For</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

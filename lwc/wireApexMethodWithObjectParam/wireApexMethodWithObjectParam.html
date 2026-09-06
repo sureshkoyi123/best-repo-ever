@@ -1,0 +1,20 @@
+<template>
+    <lightning-card>
+        <lightning-input label="Number" type="number" min="1" max="100" value={numberValue}  onchange={handleNumberChange}>
+
+        </lightning-input>
+        <lightning-input label="String" type="string" value={stringValue} onchange={handleStringChange}>
+
+        </lightning-input>
+        <lightning-input label="List" type="number" min="0" max="10" value={listItemValue} onchange={handleListChange}>
+
+        </lightning-input>
+        <template lwc:if={apexResponse.data}>
+            <p>{apexResponse.data}</p>
+
+        </template>
+        <template lwc:elseif={apexResponse.error}>
+            <p>{apexResponse.error}</p>
+        </template>
+    </lightning-card>
+</template>

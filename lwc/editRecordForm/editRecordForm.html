@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Account Info">
+<lightning-record-edit-form record-id={recordId} object-api-name={objectApiName}>
+    <lightning-messages></lightning-messages>
+    <div class="slds-grid">
+        <div class="slds-col slds-size_1-of-2">
+            <lightning-input-field field-name="Name"></lightning-input-field>
+            <lightning-input-field field-name="AnnualRevenue"></lightning-input-field>
+        </div>
+         <div class="slds-col slds-size_1-of-2">
+            <lightning-input-field field-name="Industry"></lightning-input-field>
+            <lightning-input-field field-name="Rating"></lightning-input-field>
+        </div>
+
+    </div>
+    <div class="slds-m-around_xx-small">
+      <lightning-button type="submit" variant="brand" label="Save"></lightning-button>
+    </div>
+     <div class="slds-m-around_xx-small">
+      <lightning-button label="Cancel" onclick={handleReset}></lightning-button>
+    </div>
+</lightning-record-edit-form>
+    </lightning-card>
+</template>

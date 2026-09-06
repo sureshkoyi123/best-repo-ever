@@ -1,0 +1,9 @@
+<template>
+    <template lwc:if={account.data}>
+        <p>Name: {name}</p>
+    </template>
+    <template lwc:elseif={account.error}>
+        <p>Error: {account.error}</p>
+    </template>
+    <lightning-button label ="Update Account Name" onclick={handleUpdateName}></lightning-button>
+</template>

@@ -1,0 +1,22 @@
+<template>
+    <p>List of Opportunities over</p>
+    <lightning-formatted-number value={amount} format-style="currency"></lightning-formatted-number>
+<template lwc:if={oppts.data}>
+    <template for:each={oppts.data} for:item="opp" for:index="idx">
+        <div key={opp.Id} class="slds-m-bottom_medium">
+        <p>{idx} {opp.Name}</p>
+        <p><lightning-formatted-number value={opp.Amount} format-style="currency"></lightning-formatted-number>
+        </p>
+        <p><lightning-formatted-date-time value={opp.CloseDate}></lightning-formatted-date-time></p>
+    <p><lightning-badge label={opp.StageName}></lightning-badge></p> 
+    </div>
+    </template>
+  
+
+</template>
+  <template lwc:if={oppts.error}>
+        <p>{errorMessage}</p>
+    </template>
+
+<lightning-button label="Mark all as Closed Won" onclick={handleUpdateStage}></lightning-button>
+</template>

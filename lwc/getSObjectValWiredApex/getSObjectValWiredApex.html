@@ -1,0 +1,8 @@
+<template>
+    <template lwc:if={contact.data}>
+    <p>{name}</p>
+    </template>
+    <template lwc:elseif={contact.error}>
+        <p>Error: {contact.error}</p>
+    </template>
+</template>

@@ -1,0 +1,12 @@
+<!-- accountsTreegrid.html -->
+<template>
+  <lightning-card title="Treegrid with Custom Data Types" icon-name="utility:table">
+    <c-custom-datatype-treegrid
+      key-field="Id"
+      data={accounts}
+      columns={columns}
+      onrowaction={handleRowAction}
+    >
+    </c-custom-datatype-treegrid>
+  </lightning-card>
+</template>

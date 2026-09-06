@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Grand Parent">
+        <div class="slds-p-around_medium">
+            <c-parent onchildclick={handleChildEvent}>
+
+            </c-parent></c-parent>
+
+        </div>
+        <div class="slds-p-around_medium">
+            child message from grand parent: {message}
+        </div>
+    </lightning-card>
+</template>

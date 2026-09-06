@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <authorizeUrl>https://empathetic-fox-1joqh0-dev-ed.my.salesforce.com/services/oauth2/authorize</authorizeUrl>
+    <consumerKey>3MVG9JJwBBbcN47LRs2tk1nPAd62i5_AeEMdJKq8r9uv6.oHvuwwTNx.GWhBHWiHFcNlhrbqL0feBIc2_y2b.</consumerKey>
+    <consumerSecret>Placeholder_Value</consumerSecret>
+    <friendlyName>OrgB_Auth_Provider</friendlyName>
+    <includeOrgIdInIdentifier>true</includeOrgIdInIdentifier>
+    <isPkceEnabled>true</isPkceEnabled>
+    <providerType>Salesforce</providerType>
+    <requireMfa>false</requireMfa>
+    <sendAccessTokenInHeader>false</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>false</sendClientCredentialsInHeader>
+    <sendSecretInApis>true</sendSecretInApis>
+    <tokenUrl>https://empathetic-fox-1joqh0-dev-ed.my.salesforce.com/services/oauth2/token</tokenUrl>
+</AuthProvider>

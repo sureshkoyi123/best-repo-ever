@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Created by Lightning App Builder</description>
+    <flexiPage>Account_Cases_Tree_Grid</flexiPage>
+    <label>Account-Cases-Tree-Grid</label>
+    <motif>Custom73: Highway Sign</motif>
+</CustomTab>
